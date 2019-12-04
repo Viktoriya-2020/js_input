@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>js_das-8.3</title>
+		<style>
+			
+			img{
+				border: 1px solid black;
+				height: 350px;
+				width: 350px;
+				
+			}
+		</style>
+</head>
+<body>
+	<img id=d1 src="http://pazitiff.info/uploads/posts/2016-11/1478707094_1_maxresdefault-1.jpg" alt="rose">
+	<div id="d2">
+		<div>Verev zax<input id="i1"type="range" value="0" min="0" max="6" oninput="f1()"></div>
+		<div>Verev aj<input id="i2"type="range" value="0" min="0" max="6" oninput="f1()"></div>
+		<div>Nerkev aj<input id="i3"type="range" value="0" min="0" max="6" oninput="f1()"></div>
+		<div>Nerkev zax<input id="i4"type="range" value="0" min="0" max="6" oninput="f1()"></div>
+		<div>Tapancikutyun<input id="i5"type="range" value="0" min="0" max="6" oninput="f1()"></div>
+	</div>
+		<script>
+			
+			//var style1=[15, 30, 45, 60, 75, 90]
+			//var style2=[0.9, 0.8, 0.7, 0.6, 0.5, 0.2]
+		
+			function f1(){
+			<!-- var k=e.getAttribute('id') -->
+					var val1=i1.value
+					var val2=i2.value
+					var val3=i3.value
+					var val4=i4.value
+					var val5=i5.value
+					d1.style.borderTopLeftRadius=val1*8+"%"
+					d1.style.borderTopRightRadius=val2*8+"%"
+					d1.style.borderBottomRightRadius=val3*8+"%"
+					d1.style.borderBottomLeftRadius=val4*8+"%"
+					d1.style.opacity=(1/val5-0.1)
+					
+			}
+			
+		
+				
+			
+		</script>
+</body>
+</html>
